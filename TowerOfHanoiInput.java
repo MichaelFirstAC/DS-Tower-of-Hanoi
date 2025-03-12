@@ -18,9 +18,9 @@ class TowerOfHanoiInput {
 
     // Iterative approach
     public static void solveHanoiIterative(int n, char source, char auxiliary, char destination) {
-        Stack<int[]> stack = new Stack<>();
+        Stack<int[]> stack = new Stack<>(); 
         stack.push(new int[]{n, source, auxiliary, destination});
-
+        
         while (!stack.isEmpty()) {
             int[] move = stack.pop();
             int disk = move[0];

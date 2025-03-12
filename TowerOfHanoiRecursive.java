@@ -2,8 +2,8 @@ public class TowerOfHanoiRecursive {
     // Recursive function to solve Tower of Hanoi
     public static void solveHanoi(int n, char source, char auxiliary, char destination) {
         // Base case: Only one disk to move
-        if (n == 1) {
-            System.out.println("Move disk 1 from " + source + " to " + destination);
+        if (n == 1) { 
+            System.out.println("Move disk 1 from " + source + " to " + destination); // Move disk 1 from source to destination
             return;
         }
 
@@ -17,7 +17,7 @@ public class TowerOfHanoiRecursive {
         solveHanoi(n - 1, auxiliary, source, destination);
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) { 
         int n = 3; // Number of disks
         solveHanoi(n, 'A', 'B', 'C'); // A = Source, B = Auxiliary, C = Destination
     }
