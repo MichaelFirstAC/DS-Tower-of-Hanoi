@@ -1,3 +1,3 @@
 # Data Structure
 
-Repository for Lab Assignments
+Tower of Hanoi
